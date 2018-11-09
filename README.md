@@ -50,11 +50,13 @@ A small static class for Keyboard and Mouse automation based on bitmap patterns 
 **FindAll(*Bitmap small_bmp*, *Bitmap big_bmp*, *int tolerance*)**
 - Finds all the small_bmp images contained into the big_bmp.
 - Tolerance represents a range value for the color component to change
-- Eg: Original RGB pixel (100,27,128)
--     Accepted values: R: 100 - tolerance - 100 + tolerance.
--                      G: 27 - tolerance - 27 + tolerance.
--                      B: 128 - tolerance to 128 + tolerance.
-- If values are inside that ranges, detection at that pixel will be positive.
+> - Eg: 
+> -     Original RGB pixel (100,27,128)
+> -     Accepting values:
+> -                     R: 100 - tolerance - 100 + tolerance.
+> -                     G: 27 - tolerance - 27 + tolerance.
+> -                     B: 128 - tolerance to 128 + tolerance.
+- If values are inside the range, detection at that pixel will be positive.
 - It uses the Properties: "chroma_r, chroma_g, chroma_b" to skip that detection and set the pixel as positive.
 
 
