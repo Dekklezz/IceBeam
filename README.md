@@ -1,5 +1,5 @@
 # IceBeam
-A small static class for Keyboard and Mouse automation based on bitmap patterns recognition written in C#.
+A small static class for Keyboard and Mouse automation based on bitmap patterns recognition written in C# by Dekklezz.
 
 # Variables created:
 
