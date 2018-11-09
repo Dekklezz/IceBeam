@@ -42,7 +42,7 @@ A small static class for Keyboard and Mouse automation based on bitmap patterns 
 - If you dont set an index, it will pick first screen, either it will try finding the screen for the index you gave.
 
 **Screenshot(*System.Drawing.Rectangle rect*)**
-- Returns a screenshot in Bitmap object, for the "rect" inside the screen at the time the function was called.
+- **Returns** a screenshot in ***Bitmap*** object, for the "rect" inside the screen at the time the function was called.
 
 **SetChromaKey(*int r*, *int g*, *int b*)**
 - Sets the static variables which will be used for the finding algorythms later on.
@@ -54,25 +54,23 @@ A small static class for Keyboard and Mouse automation based on bitmap patterns 
 -     Accepted values: R: 100 - tolerance - 100 + tolerance.
 -                      G: 27 - tolerance - 27 + tolerance.
 -                      B: 128 - tolerance to 128 + tolerance.
--
 - If values are inside that ranges, detection at that pixel will be positive.
-- 
 - It uses the Properties: "chroma_r, chroma_g, chroma_b" to skip that detection and set the pixel as positive.
--
-- Returns a List<System.Drawing.Rectangle> containing all coincidences obtained, with their location informations 
+
+
+- **Returns a *List<System.Drawing.Rectangle>*** containing all coincidences obtained, with their location informations 
 - relative to the big bitmap.
 
 
 **FindFirst(*Bitmap small_bmp*, *Bitmap big_bmp*, *int tolerance*)**
 - Finds the small_bmp image contained into the big_bmp.
 - Works the same as the one described above, but this one stops when finding the first coincidence.
-- 
-- It returns a System.Drawing.Rectangle containing the coincidence obtained, with its location information relative 
+- It **returns a *System.Drawing.Rectangle*** containing the coincidence obtained, with its location information relative 
 - to the big bitmap.
 - If it was not found, it returns a System.Drawing.Rectangle.Empty(); struct.
 
 **AreTheyEqual(*Bitmap bmp1*, *Bitmap bmp2*)**
-- Returns true if both bitmaps contains the same information, false otherwise.
+- **Returns *true*** if both bitmaps contains the same information, ***false*** otherwise.
 
 
 # Keylist
